@@ -41,13 +41,13 @@ namespace TemperatureConverter.ViewModels
             this.languageSettingsManager = languageSettingsManager;
         }
 
-        public void ConvertCelsiusToFahrenheit(double celsiusValue)
+        public void ConvertCelsiusToFahrenheit()
         {
-            Fahrenheit = temperatureConverterCalculator.ConvertCelsiusToFahrenheit(celsiusValue);
+            Fahrenheit = temperatureConverterCalculator.ConvertCelsiusToFahrenheit(Celsius);
         }
-        public void ConvertFahrenheitToCelsius(double fahrenheitValue)
+        public void ConvertFahrenheitToCelsius()
         {
-            Celsius = temperatureConverterCalculator.ConvertFahrenheitToCelsius(fahrenheitValue);
+            Celsius = temperatureConverterCalculator.ConvertFahrenheitToCelsius(Fahrenheit);
         }
 
         public void ChangeLanguage(string language)
